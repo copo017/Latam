@@ -1,0 +1,5 @@
+locust~=1.6
+coverage~=5.5
+pytest~=6.2.5
+pytest-cov~=2.12.1
+mockito~=1.2.2

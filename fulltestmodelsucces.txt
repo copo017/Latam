@@ -1,0 +1,15 @@
+"F:\Users\Documents\Program Class\latam2\.venv\Scripts\python.exe" "C:/Users/sebas/AppData/Local/Programs/PyCharm Professional 2024.2.1/plugins/python-ce/helpers/pycharm/_jb_pytest_runner.py" --target test_model.py::TestModel.test_model_preprocess_for_training 
+Testing started at 4:14 ...
+Launching pytest with arguments test_model.py::TestModel::test_model_preprocess_for_training --no-header --no-summary -q in F:\Users\Documents\Program Class\latam2\tests\model
+
+============================= test session starts =============================
+collecting ... collected 1 item
+
+test_model.py::TestModel::test_model_preprocess_for_training 
+
+======================== 1 passed, 1 warning in 1.78s =========================
+PASSED      [100%]
+Process finished with exit code 0
+
+uvicorn challenge.api:app --reload
+fastapi 0.86.0

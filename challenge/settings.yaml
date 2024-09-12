@@ -1,0 +1,42 @@
+TOP_FEATURES : [
+        "OPERA_Latin American Wings", 
+        "MES_7",
+        "MES_10",
+        "OPERA_Grupo LATAM",
+        "MES_12",
+        "TIPOVUELO_I",
+        "MES_4",
+        "MES_11",
+        "OPERA_Sky Airline",
+        "OPERA_Copa Air"
+    ]
+
+THRESHOLD: 15
+
+OPERATORS: [
+    "Grupo LATAM",
+    "Sky Airline",
+    "Aerolineas Argentinas",
+    "Copa Air",
+    "Latin American Wings",
+    "Avianca",
+    "JetSmart SPA",
+    "Gol Trans",
+    "American Airlines",
+    "Air Canada",
+    "Iberia",
+    "Delta Air",
+    "Air France",
+    "Aeromexico",
+    "United Airlines",
+    "Oceanair Linhas Aereas",
+    "Alitalia",
+    "K.L.M.",
+    "British Airways",
+    "Qantas Airways",
+    "Lacsa",
+    "Austral",
+    "Plus Ultra Lineas Aereas",
+]
+
+FLIGHT_TYPES: ["I", "N"]
