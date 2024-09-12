@@ -15,7 +15,8 @@ class TestBatchPipeline(unittest.TestCase):
     def setUp(self):
         self.client = TestClient(app)
         # Verificar si el archivo model.pkl ya existe en el directorio raíz, si no, lo copiamos
-        model_source_path = Path("F:/Users/Documents/Program Class/latam2/tests/model/model.pkl")
+        # model_source_path = Path("F:/Users/Documents/Program Class/latam2/tests/model/model.pkl")
+        model_source_path = Path("tests/model/model.pkl")
         model_destination_path = Path("model.pkl")
 
         if not model_destination_path.exists():

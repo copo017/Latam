@@ -8,7 +8,10 @@ import yaml
 import logging as LOGGER
 
 # Get settings file as SETTINGS
-with open('F:/Users/Documents/Program Class/latam2/challenge/settings.yaml', 'r') as f:
+# with open('F:/Users/Documents/Program Class/latam2/challenge/settings.yaml', 'r') as f:
+#     SETTINGS = yaml.safe_load(f)
+
+with open('challenge/settings.yaml', 'r') as f:
     SETTINGS = yaml.safe_load(f)
 
 LOGGER.basicConfig(
