@@ -1,7 +1,11 @@
-name: 'Continuous Delivery'
+name: 'Continuous Deployment'
 
 on:
-  ...
+  workflow_dispatch:
 
 jobs:
-  ...
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder
+        run: echo "CD not configured yet"
