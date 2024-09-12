@@ -1,11 +1,21 @@
 name: 'Continuous Deployment'
 
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ['Continuos Integration']
+    types:
+      - completed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Placeholder
-        run: echo "CD not configured yet"
+      - name: 'Checkout code'
+        uses: actions/checkout@v3
+
+      - name: 'Trigger deployment on Render'
+        run: |
+          curl -X POST \
+          https://api.render.com/deploy/srv-crhgn5tsvqrc738drpf0?key=6ykXCVPwHW0
+
