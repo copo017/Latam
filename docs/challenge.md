@@ -76,6 +76,12 @@ A lo largo del desarrollo, seguimos varias buenas prácticas que garantizaron la
 - **Pruebas automatizadas**: Se configuraron pruebas unitarias para garantizar que tanto la lógica del modelo como la API funcionen correctamente. Las pruebas se ejecutan automáticamente en cada cambio mediante **CI/CD**.
 - **Control de versiones**: Utilizamos **Git** para controlar los cambios y colaborar eficientemente en el proyecto.
 - **Despliegue continuo (CI/CD)**: Implementamos pipelines de CI/CD para ejecutar pruebas automatizadas antes de desplegar la API en producción, asegurando que el código siempre esté en buen estado antes de ser liberado.
+- **Utilizamos el archivo settings.yaml** para centralizar la configuración clave de nuestro modelo y la API, y así evitar la repetición de información en múltiples partes del código. El objetivo era hacer que el sistema sea más flexible y fácil de mantener.
+    Aquí está el propósito de cada sección dentro del archivo settings.yaml:
+    - **TOP_FEATURES:** Especifica las características principales (o variables) que el modelo utilizará para hacer predicciones. Estas son las columnas que demostraron tener más impacto en el rendimiento del modelo durante el entrenamiento. Al definirlas en un archivo separado, podemos modificar las características importantes sin tocar el código del modelo.
+    - **THRESHOLD:** Este valor define el umbral en minutos para determinar si un vuelo se considera retrasado. En este caso, cualquier vuelo con una diferencia de más de 15 minutos entre la hora de salida programada y la hora real se clasifica como retrasado.
+    - **OPERATORS:** Es una lista de las aerolíneas que el modelo puede manejar. Si en el futuro se agregan nuevas aerolíneas, podemos simplemente actualizar este archivo en lugar de modificar el código base.
+    - **FLIGHT_TYPES:** Define los tipos de vuelo que son reconocidos por el sistema, como vuelos internacionales ("I") y nacionales ("N").
 
 ### 5. Despliegue en Render
 Se opto por desplegar en render por la familiaridad que tengo con este sitio para alojar aplicaciones que no usen tantos recursos.
