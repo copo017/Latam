@@ -5,7 +5,7 @@ import yaml
 from typing import List
 from challenge import model
 
-# Cargar archivo settings.yaml
+# Cargar el archivo settings.yaml
 with open('challenge/settings.yaml', 'r') as f:
     SETTINGS = yaml.safe_load(f)
 
